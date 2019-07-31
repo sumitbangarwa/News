@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		192BC642468882A32D07EBB4 /* Pods_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B253920A541F443968F10D /* Pods_News.framework */; };
+		B658FF3D22F213F6000BA895 /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658FF3C22F213F6000BA895 /* webView.swift */; };
 		B6604EF222F209D30002B4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6604EF122F209D30002B4F1 /* AppDelegate.swift */; };
 		B6604EF722F209D30002B4F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6604EF522F209D30002B4F1 /* Main.storyboard */; };
 		B6604EF922F209D50002B4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6604EF822F209D50002B4F1 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		39B253920A541F443968F10D /* Pods_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4803906DD53A4C18EDBFA771 /* Pods-News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.debug.xcconfig"; sourceTree = "<group>"; };
+		B658FF3C22F213F6000BA895 /* webView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 		B6604EEE22F209D30002B4F1 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6604EF122F209D30002B4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6604EF622F209D30002B4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				B6F3608122F20B49008AEEB5 /* UIImage+Gif.swift */,
 				B6F3607822F20B20008AEEB5 /* ViewController.swift */,
 				B6F3607922F20B20008AEEB5 /* newscell.swift */,
+				B658FF3C22F213F6000BA895 /* webView.swift */,
 				B6604EF822F209D50002B4F1 /* Assets.xcassets */,
 				B6604EFA22F209D50002B4F1 /* LaunchScreen.storyboard */,
 				B6604EFD22F209D50002B4F1 /* Info.plist */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F3607B22F20B20008AEEB5 /* ViewController.swift in Sources */,
+				B658FF3D22F213F6000BA895 /* webView.swift in Sources */,
 				B6604EF222F209D30002B4F1 /* AppDelegate.swift in Sources */,
 				B6F3607C22F20B20008AEEB5 /* newscell.swift in Sources */,
 				B6F3608222F20B49008AEEB5 /* UIImage+Gif.swift in Sources */,

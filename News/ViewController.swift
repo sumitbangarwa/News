@@ -98,8 +98,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.title.text = title
             cell.descrip.text = descrip
             cell.author.text = author
-            let fullNameArr = date.components(separatedBy: "T")
             
+            let fullNameArr = date.components(separatedBy: "T")
             var firstName: String = fullNameArr[0]
             var lastName: String = fullNameArr[1]
             cell.date.text = firstName
@@ -127,17 +127,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let indexPath = tableView.indexPathForSelectedRow
-        if let url =  self.newsData[indexPath!.row]["url"] as? String
-        {
-            //        let urls = newsStoryUrlArray[(indexPath?.row)!]
-            
-            UIApplication.shared.open( URL(string: url)!, options: [:] ) { (success) in
-                if success {
-                    print("open link")
-                }
-            }
-        }
+        let webVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "webView") as! webView
+        
+        webVC.url =  self.newsData[indexPath.row]["url"] as? String
+        
+        self.present(webVC, animated: true, completion: nil)
+        
+
         
     }
     
